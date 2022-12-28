@@ -79,7 +79,7 @@ Atau download `tools` dan upload pada direktori projek.
 
 WiFi adapter pada ESP32 yang diset sebagai station akan melakukan scanning jaringan WiFi disekitar. Radius scan dan kekuatan sinyal dapat bervariasi untuk setiap modul mulai dari 1-10 meter. Pada kasus ini, saya menggunakan ESP32U Dev4 + Antena 3dB, sehingga sinyal yang didapat lebih bagus dibandingkan adapter ESP32 standar dengan antena internal.
 
-<img src="https://user-images.githubusercontent.com/49542850/209773842-9ea10454-61ba-4e7b-9293-7af11db5becf.png" width="150px">
+<img src="https://user-images.githubusercontent.com/49542850/209773842-9ea10454-61ba-4e7b-9293-7af11db5becf.png" width="250px">
 
 ESP akan melakukan scanning dan memunculkan hasilnya pada serial monitor jaringan WiFi beserta kekuatan sinyal yang didapat. Jika tidak ada jaringan maka akan tertulis "No Networks Found". Scanning akan diulang setiap 5 detik karena terdapat `delay(5000)` dan lebih baik tidak dilakukan terlalu cepat (spam).
 
@@ -159,7 +159,7 @@ ESP akan melakukan inisialisasi awal untuk WiFi, dht, serial monitor, serta web 
 
 ESP akan membaca data dari sensor berupa suhu dan kelembaban yang kemudian disimpan dalam variabel. Data dari variabel kemudian dikirim melalui link yang sudah disediakan menggunakan method POST via javascript. Hasil dari sensor kemudian akan muncul pada web sebagaimana contoh.
 
-<img src="https://user-images.githubusercontent.com/49542850/209773852-935ab3cc-bee6-410a-81a3-8a93e99eca71.png" width="150px">
+<img src="https://user-images.githubusercontent.com/49542850/209773852-935ab3cc-bee6-410a-81a3-8a93e99eca71.png" width="200px">
 
 ### Tugas
 
