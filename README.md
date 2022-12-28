@@ -12,9 +12,8 @@ Pada jobsheet 3 terdapat 5 project yaitu scanning WiFi, WiFi station, WiFi auto-
 
 -   ESP32
 -   Arduino IDE (Terinstal ESP32)
--   Library DHT dan Adafruit unified sensor
--   Breadboard
--   Kabel Jumper
+-   Library DHT, Adafruit unified sensor, ESPAsyncWebServer dan AsyncTCP
+-   Tool Arduino ESP32 Filesystem Uploader (SPIIFS)
 -   Sensor DHT
 
 ### Instalasi ESP-32
