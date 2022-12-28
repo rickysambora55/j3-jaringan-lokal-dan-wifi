@@ -79,7 +79,7 @@ Atau download `tools` dan upload pada direktori projek.
 
 WiFi adapter pada ESP32 yang diset sebagai station akan melakukan scanning jaringan WiFi disekitar. Radius scan dan kekuatan sinyal dapat bervariasi untuk setiap modul mulai dari 1-10 meter. Pada kasus ini, saya menggunakan ESP32U Dev4 + Antena 3dB, sehingga sinyal yang didapat lebih bagus dibandingkan adapter ESP32 standar dengan antena internal.
 
-<img src="https://user-images.githubusercontent.com/49542850/209763400-4e38f982-6574-4a3e-89c6-892199b01996.png" width="350px">
+<img src="https://user-images.githubusercontent.com/49542850/209773842-9ea10454-61ba-4e7b-9293-7af11db5becf.png" width="150px">
 
 ESP akan melakukan scanning dan memunculkan hasilnya pada serial monitor jaringan WiFi beserta kekuatan sinyal yang didapat. Jika tidak ada jaringan maka akan tertulis "No Networks Found". Scanning akan diulang setiap 5 detik karena terdapat `delay(5000)` dan lebih baik tidak dilakukan terlalu cepat (spam).
 
@@ -98,7 +98,7 @@ ESP akan melakukan scanning dan memunculkan hasilnya pada serial monitor jaringa
 
 ESP bertindak sebagai station atau client dari sebuah jaringan/AP yang ada. Sehingga SSID dan password dari jaringan harus diketahui agar ESP dapat terhubung. Pada kode dilakukan looping untuk pengecekan apakah ESP sudah terkoneksi dengan jaringan. Bila sudah, maka akan muncul IP address yang didapatkan ESP, pada contoh yaitu 192.168.108.88.
 
-<img src="https://user-images.githubusercontent.com/49542850/209763406-1e1f5cb5-4d8e-496d-931f-9d5a8fac8244.png" width="350px">
+<img src="https://user-images.githubusercontent.com/49542850/209773847-d7afc393-da5a-41e8-8090-0a193c12905a.png" width="150px">
 
 ## Project C - Menghubungkan Kembali (Re-connect) ESP32 dengan Jaringan Wi-Fi
 
@@ -115,7 +115,7 @@ ESP bertindak sebagai station atau client dari sebuah jaringan/AP yang ada. Sehi
 
 Sistem auto reconnect adalah pengembangan dari sistem konek pada sebelumnya. Perbedaanya terdapat perkondisian untuk mendeteksi jaringan di dalam fungsi loop. Setelah dideteksi ESP terputus dari jaringan, maka setiap beberapa "jeda waktu", maka ESP akan mencoba melakukan konek ulang ke jaringan yang sebelumnya telah terhubung, dalam hal ini telah ditulis SSID dan password pada tahap sebelumnya.
 
-<img src="https://user-images.githubusercontent.com/49542850/209763411-dd039122-d079-4643-9a84-3e2c10b99d3f.png" width="350px">
+<img src="https://user-images.githubusercontent.com/49542850/209773850-83f82e86-9a9f-4dd4-b98a-4edb72aadf79.png" width="150px">
 
 ## Project D - Mengganti Hostname ESP32
 
@@ -126,13 +126,13 @@ Sistem auto reconnect adalah pengembangan dari sistem konek pada sebelumnya. Per
 
 ### Keluaran
 
-<img src="https://user-images.githubusercontent.com/49542850/209751688-e2743c94-5c77-405e-aedf-d990f45fa9d2.jpeg" width="600px">
+<img src="https://user-images.githubusercontent.com/49542850/209751688-e2743c94-5c77-405e-aedf-d990f45fa9d2.jpeg" width="300px">
 
 ### Penjelasan
 
 Hostname merupakan identitas perangkat yang dipakai oleh ESP32. Hostname akan muncul ketika ESP terhubung ke suatu jaringan, maka pemilik jaringan tersebut (AP) dapat melihat identitas dari perangkat yang terhubung, dalam hal ini adalah hostname dari ESP. ESP harus mendeklarasikan hostnamenya dengan perintah `WiFi.setHostname()` sebelum melakukan koneksi ke jaringan.
 
-<img src="https://user-images.githubusercontent.com/49542850/209763413-248b7668-aaca-4ace-b601-5d3e2e49bfef.png" width="350px">
+<img src="https://user-images.githubusercontent.com/49542850/209773851-559aeab2-a2ee-409d-81bd-0193ca90c741.png" width="150px">
 
 ## Project E - Mengirim Data Sensor ke Database
 
@@ -159,7 +159,7 @@ ESP akan melakukan inisialisasi awal untuk WiFi, dht, serial monitor, serta web 
 
 ESP akan membaca data dari sensor berupa suhu dan kelembaban yang kemudian disimpan dalam variabel. Data dari variabel kemudian dikirim melalui link yang sudah disediakan menggunakan method POST via javascript. Hasil dari sensor kemudian akan muncul pada web sebagaimana contoh.
 
-<img src="https://user-images.githubusercontent.com/49542850/209763414-ca28d88e-6300-4cc5-b051-ed9ae963c187.png" width="350px">
+<img src="https://user-images.githubusercontent.com/49542850/209773852-935ab3cc-bee6-410a-81a3-8a93e99eca71.png" width="150px">
 
 ### Tugas
 
