@@ -15,8 +15,6 @@ Pada jobsheet 3 terdapat 5 project yaitu scanning WiFi, WiFi station, WiFi auto-
 -   Library DHT dan Adafruit unified sensor
 -   Breadboard
 -   Kabel Jumper
--   Resistor < 220Ω
--   LED
 -   Sensor DHT
 
 ### Instalasi ESP-32
